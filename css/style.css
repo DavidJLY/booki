@@ -16,6 +16,35 @@
 body {
     display: flex;
     justify-content: center;
+    margin-top: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    height: 79px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 68px;
+    height: 51px;
+}
+
+nav a {
+    padding: 16px 0px;
+    border-top: 2px solid transparent;
+}
+
+a:hover {
+    color: #0065FC;
+    border-color: #0065FC;
+}
+
+#logo {
+    padding: 30px 50px 30px 50px;
 }
 
 .main-container {
