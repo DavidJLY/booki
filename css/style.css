@@ -22,7 +22,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    width: 1440px;
+    width: 1340px;
     height: 79px;
 }
 
@@ -33,6 +33,7 @@ nav {
     height: 51px;
 }
 
+/*pour faire apparaitre la barre au survol des liens*/
 nav a {
     padding: 16px 0px;
     border-top: 2px solid transparent;
@@ -44,7 +45,53 @@ a:hover {
 }
 
 #logo {
-    padding: 30px 50px 30px 50px;
+    padding: 30px 50px 30px 0px;
+}
+
+form {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.search-button {
+    background-color: #0065FC;
+    color: white;
+    font-weight: bolder;
+    border-radius: 0px 15px 15px 0px;
+    padding: 15px 16px 15px 16px;
+}
+
+.mobile-search-button {
+    display: none;
+}
+
+input[type="text"]{
+    border: transparent;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.filtres {
+    display: flex;
+    gap: 15px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+.filtres button {
+    border-radius: 25px;
+    border-color: #D9D9D9;
+    font-weight: bolder;
+    padding: 4px 19px 4px 19px;
+    background-color: white;
+}
+
+i.fa-solid.fa-info  {
+    color: #0065FC;
+    border: solid 1px;
+    border-radius: 50%;
+    padding: 10px;
+    border-color: #D9D9D9;
 }
 
 .main-container {
