@@ -80,6 +80,7 @@ i.fa-solid.fa-location-dot {
 /*Bouton recherche desktop ou mobile*/
 .search-button {
     background-color: #0065FC;
+    border: 1px solid #0065FC;
     color: white;
     font-weight: bolder;
     border-radius: 0px 15px 15px 0px;
@@ -91,6 +92,9 @@ i.fa-solid.fa-location-dot {
     background-color: #0065FC;
     border: 1px solid #0065FC;
     border-radius: 10px;
+    width: 49px;
+    height: 49px;
+    justify-content: center;
 }
 
 i.fa-solid.fa-magnifying-glass {
@@ -281,10 +285,9 @@ a {
 /*******Activités*******/
 
 .activities {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    max-width: fit-content;
-    gap: 20px;
+    display: flex;
+    gap: 30px;
+    width: 100%;
 }
 
 .activities-marseille {
@@ -293,20 +296,29 @@ a {
 }
 
 .activities-cards {
-    max-width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; 
 }
 .section-title {
     margin-bottom: 30px;
 }
 
 .card-activities {
-    box-shadow: 5px 5px 5px #F2F2F2;
+    background-color: white;
     border-radius: 20px;
+    box-shadow: 0px 3px 15px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
 }
 
-.card-activities img{
+.activities.img{
     height: 380px;
-    width: 297.5px;
+    width: 100%;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -320,6 +332,7 @@ a {
     background-color: #F2F2F2;
     padding: 20px;
     margin-top: 60px;
+    width: 100%;
 }
 
 ul {
@@ -401,58 +414,64 @@ ul {
     }
 
     .mobile-search-button {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
 /*Barre de filtres*/
     .filtersBar .filter-title {
        display: inline;
-        }
+    }
 
     .filtersBar {
-            display: grid;
-            grid-template-columns: 1fr 1fr;            
-        }
+        display: grid;
+        grid-template-columns: 1fr 1fr;            
+    }
 
 /*Div Hebergements & Populaires*/
         /*Pour faire remonter les populaires au dessus*/
-        .hebergements-and-populaires {
-            display: flex;
-            flex-direction: column-reverse;
-        }
+     .hebergements-and-populaires {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 
-        section.hebergements-marseille {
-            background-color: white;
-        }
+    section.hebergements-marseille {
+        background-color: white;
+    }
 
-        .populaires-cards {
-            display: flex;
-            flex-direction: column;
-        }
+    section.populaires {
+        padding-top: 0;
+        margin-top: 0;
+    }
 
-        .hebergements-cards {
-            display: flex;
-            flex-direction: column;
-        }
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hebergements-cards {
+        display: flex;
+        flex-direction: column;
+    }
         
 /*Pour que les cards prennent toute la largeur*/
-        .populaires-cards a {
-            width: 100%;
-        }
+    .populaires-cards a {
+        width: 100%;
+    }
 
 /*Section activités*/
-        .activities {
-            display: flex;
-            flex-direction: column;
-        }
+    .activities {
+        display: flex;
+         flex-direction: column;
+    }
 
-        .activities-cards {
-            width: 100%;
-        }
+     .activities-cards {
+         width: 100%;
+     }
 
 /*Footer*/
-        .footer-list {
-            display: flex;
-            flex-direction: column;
-        }
+     .footer-list {
+         display: flex;
+         flex-direction: column;
+     }
 }
