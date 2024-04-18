@@ -310,7 +310,7 @@ a {
 
 .card-activities img{
     height: 380px;
-    width: 297.5px;
+    width: 100%;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
