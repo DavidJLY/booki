@@ -59,10 +59,16 @@ nav a:hover {
 }
 
 /******Formulaire*******/
-form {
+.formulaire {
     display: flex;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+/*****Barre search and filters*****/
+.search-and-filters {
+    display: flex;
+    flex-direction: column;
 }
 
 /*icone localisation de barre de recherche*/
@@ -113,12 +119,16 @@ input[type="text"]{
 }
 
 /*Barre de filtres*/
-.filtersBar .filter-title {
-    display: flex;
-    flex-direction: row;
+.filtersBar {
     gap: 20px;
     font-weight: bolder;
-    margin-bottom: 25px;
+    display: flex;
+}
+
+.filter-title {
+    display: flex;
+    gap: 20px;
+    font-weight: bolder;
 }
 
 .filtersBar button {
@@ -145,7 +155,7 @@ i.fa-solid.fa-info  {
 }
 
 .availability {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .main-container {
@@ -290,12 +300,15 @@ a {
     justify-content: space-between;
     gap: 10px;
     width: 100%;
-    padding: 10px;
-    box-sizing: border-box; 
+    padding: 30px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    
 }
 
 .activities {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
     width: 100%;
 }
@@ -317,7 +330,8 @@ a {
 }
 
 /********footer********/
-.footer-list {
+
+footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-around;
@@ -382,25 +396,30 @@ ul {
         flex-direction: column;
         width: 100%;
     }
-/*Pour centrer le logo*/
+    /*Pour centrer le logo*/
     .logo {
         display: flex;
         justify-content: center;
     }
 
-/*Changement de la place de la barre au :hover*/
+    /*Changement de la place de la barre au :hover*/
     nav a {
         border-top: none;
         border-bottom: 2px solid transparent;
     }
 
-/*Repositionnement des liens*/
+    /*Repositionnement des liens*/
     nav {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-/*Changement du bouton recherche*/
+    /*Pour centrer la barre recherche et filtres*/
+    .search-and-filters {
+        align-items: center;
+    }
+
+    /*Changement du bouton recherche*/
     .search-button {
         display: none;
     }
@@ -410,17 +429,22 @@ ul {
         grid-template-columns: 1fr 1fr;
     }
 
-/*Barre de filtres*/
-    .filtersBar .filter-title {
+    /*Barre de filtres*/
+    .filtersBar {
+        flex-direction: column;
+    }
+
+    .filters {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+    }    
+
+    .filter-title {
        display: inline;
     }
 
-    .filtersBar {
-        display: grid;
-        grid-template-columns: 1fr 1fr;            
-    }
 
-/*Div Hebergements & Populaires*/
+    /*Div Hebergements & Populaires*/
         /*Pour faire remonter les populaires au dessus*/
      .hebergements-and-populaires {
         display: flex;
@@ -446,12 +470,12 @@ ul {
         flex-direction: column;
     }
         
-/*Pour que les cards prennent toute la largeur*/
+    /*Pour que les cards prennent toute la largeur*/
     .populaires-cards a {
         width: 100%;
     }
 
-/*Section activités*/
+    /*Section activités*/
     .activities {
         display: flex;
          flex-direction: column;
@@ -461,8 +485,8 @@ ul {
          width: 100%;
      }
 
-/*Footer*/
-     .footer-list {
+    /*Footer*/
+     footer {
          display: flex;
          flex-direction: column;
      }

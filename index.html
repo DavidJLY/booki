@@ -21,8 +21,8 @@
                 <img src="images/logo/Booki.png" alt="logo" id="logo">
             </div>
             <nav>
-                <a class="hebergements" href="#hebergements-marseille">Hebergements</a>
-                <a class="activites" href="#activites-marseille">Activités</a>
+                <a class="hebergements" href="#lien-hebergements-marseille">Hebergements</a>
+                <a class="activites" href="#lien-activites">Activités</a>
             </nav>
         </header>
         <main>
@@ -32,7 +32,7 @@
             </div>
             <div class="search-and-filters">
                 <div class="search">
-                  <form method="get" action="">
+                  <form class="formulaire">
                       <i class="fa-solid fa-location-dot"></i>
                       <input type="text" name="search" id="search" value="Marseille, France">
                        <button class="search-button">Rechercher</button>
@@ -43,6 +43,7 @@
                 <section class="filtersBar">
                     <div class="filter-title">
                         <p>Filtres</p>
+                    </div>
                     <div class="filters">
                         <button class="economique"><i class="fa-solid fa-money-bill-wave"></i> Economique</button>
                         <button class="familial"><i class="fa-solid fa-person"></i> Familial</button>
@@ -59,7 +60,7 @@
             <div class="hebergements-and-populaires">
                 <section class="hebergements-marseille">
                     <div class="hebergements-title">
-                        <h2 id="hebergements-marseille" class="section-title">Hébergements à Marseille</h2>
+                        <h2 id="lien-hebergements-marseille" class="section-title">Hébergements à Marseille</h2>
                     </div>
                     <div class="hebergements-cards">
                         <a href="#">
@@ -246,7 +247,7 @@
                 </section>
             </div>
                 <section class="activities-cards">
-                    <h3 class="section-title">Activités à Marseille</h3>
+                    <h3 id="lien-activites" class="section-title">Activités à Marseille</h3>
                     <div class="activities">
                         <a href="#">
                             <article class="card-activities">
@@ -276,38 +277,35 @@
                 </section>
             </main>
         <footer>
-            <section class="footer-list">
-                <div class="list">
-                    <h3 class="list-title">A propos</h3>
-                    <div class="list-content">
-                        <ul>
-                            <li><a href="#">Fonctionnement du site</a></li>
-                            <li><a href="#">Conditions générales</a></li>
-                            <li><a href="#">Données et confidentilité</a></li>
-                        </ul>
-                    </div>
+            <div class="list">
+                <h3 class="list-title">A propos</h3>
+                <div class="list-content">
+                    <ul>
+                        <li><a href="#">Fonctionnement du site</a></li>
+                        <li><a href="#">Conditions générales</a></li>
+                        <li><a href="#">Données et confidentilité</a></li>
+                    </ul>
                 </div>
-                <div class="list">
-                    <h3 class="list-title">Nos hébergements</h3>
-                    <div class="list-content">
-                        <ul>
-                            <li><a href="#">Charte qualité</a></li>
-                            <li><a href="#">Proposer votre hotel</a></li>
-                        </ul>
-                    </div>
+            </div>
+            <div class="list">
+                <h3 class="list-title">Nos hébergements</h3>
+                <div class="list-content">
+                    <ul>
+                        <li><a href="#">Charte qualité</a></li>
+                        <li><a href="#">Proposer votre hotel</a></li>
+                    </ul>
                 </div>
-                <div class="list">
-                    <h3 class="list-title">Assistance</h3>
-                    <div class="list-content">
-                        <ul>
-                            <li><a href="#">Centre d'aide</a></li>
-                            <li><a href="#">Nous contacter</a></li>
-                        </ul>
-                    </div>
+            </div>
+            <div class="list">
+                <h3 class="list-title">Assistance</h3>
+                <div class="list-content">
+                    <ul>
+                        <li><a href="#">Centre d'aide</a></li>
+                        <li><a href="#">Nous contacter</a></li>
+                    </ul>
                 </div>
-            </section>
+            </div>
         </footer>
     </div>
 </body>
-
 </html>
