@@ -19,6 +19,13 @@ body {
     margin-top: 0;
 }
 
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -40,6 +47,10 @@ nav {
     margin-bottom: 40px;
 }
 
+.promesse {
+    margin: 0;
+}
+
 /*pour faire apparaitre la barre au survol des liens*/
 nav a {
     padding: 16px 0px;
@@ -50,12 +61,6 @@ nav a {
 nav a:hover {
     color: #0065FC;
     border-color: #0065FC;
-}
-
-/*pour limiter l'espace entre <h1> et <p>*/
-.promesse h1 {
-    margin: 0;
-    padding: 0;
 }
 
 /******Formulaire*******/
@@ -158,13 +163,6 @@ i.fa-solid.fa-info  {
     margin-bottom: 20px;
 }
 
-.main-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
-}
-
 a {
     color: inherit;
     text-decoration: none;
@@ -225,18 +223,20 @@ a {
 .hebergements-cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
 }
 
 .hebergements-cards .card {
     display: flex;
     flex-direction: column;
     margin-top: 33px;
-    margin-right: 33px;
+    margin-right: 25px;
     box-shadow: 5px 5px 5px #F2F2F2;
 }
 
 .hebergements-cards img {
     height: 124px;
+    width: 100%;
     border-radius: 20px 20px 0 0;
 }
 
@@ -359,7 +359,7 @@ ul {
 
     .hebergements-marseille {
         width: 100%;
-        margin-top: 50px;
+        /*margin-top: 50px;*/
     }
 
     .populaires {
@@ -383,6 +383,11 @@ ul {
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .filtersBar {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -414,6 +419,11 @@ ul {
         grid-template-columns: 1fr 1fr;
     }
 
+    .promesse {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
     /*Pour centrer la barre recherche et filtres*/
     .search-and-filters {
         align-items: center;
@@ -429,9 +439,23 @@ ul {
         grid-template-columns: 1fr 1fr;
     }
 
+    /*Extension du input sur toute la largeur de l'écran*/
+    input[type="text"]{
+        width: 100%;
+    }
+
+    .search {
+        width: 87%;
+    }
+
+    .formulaire {
+        width: 100%;
+    }
+
     /*Barre de filtres*/
     .filtersBar {
         flex-direction: column;
+        width: 87%;
     }
 
     .filters {
